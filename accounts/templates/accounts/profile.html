@@ -3,6 +3,9 @@
     <h1>
         Hello, {{ user.username }} !
     </h1>
+    <footer>
+        <a href="{% url 'accounts:logout' %}">Logout</a>
+    </footer>
 </article>
 {% else %}
     Login first
