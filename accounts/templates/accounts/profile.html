@@ -1,0 +1,9 @@
+{% if user.is_authenticated %}
+<article>
+    <h1>
+        Hello, {{ user.username }} !
+    </h1>
+</article>
+{% else %}
+    Login first
+{% endif %}
